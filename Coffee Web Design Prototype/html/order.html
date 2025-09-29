@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MR.COFFEE</title>
+    <!-- Link Icons -->
+    <script
+      src="https://kit.fontawesome.com/6278ec48df.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/order.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <!--Header-->
+    <nav class="navbar">
+      <div class="logo">
+        <img class="logo-img" src="/asset/whiteLogo.png" alt="" />
+        <p>MR.COFFEE</p>
+      </div>
+      <div class="menu-toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <ul class="nav-list">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="aboutus.html">About</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="reward.html">Reward</a></li>
+        <li><a href="order.html">Order</a></li>
+      </ul>
+    </nav>
+    <!--Order Form-->
+    <section class="order">
+      <form id="form" class="form">
+        <h2>Order</h2>
+        <div class="form-group fullname">
+          <label for="fullname">Full Name</label>
+          <input type="text" id="fullname" placeholder="Enter your full name" />
+          <small>ERROR</small>
+        </div>
+        <div class="form-group email">
+          <label for="email">Email Address</label>
+          <input
+            type="text"
+            id="email"
+            placeholder="Enter your email address"
+          />
+          <small>ERROR</small>
+        </div>
+        <div class="form-group address">
+          <label for="address">Address</label>
+          <input id="address" placeholder="Enter your address" type="text" />
+          <small>ERROR</small>
+        </div>
+        <div class="form-group menu">
+          <label for="menu">Menu</label>
+          <select id="menu">
+            <option value="" selected disabled>Select Your Menu</option>
+            <option value="Special Espresso">Special Espresso</option>
+            <option value="Latte Espresso">Latte Espresso</option>
+            <option value="Original Espresso">Original Espresso</option>
+          </select>
+          <small>ERROR</small>
+        </div>
+        <div class="form-group addons">
+          <label for="addons">Add Ons</label>
+          <select id="addons">
+            <option value="" selected disabled>Select Add Ons</option>
+            <option value="Extra Cream">Extra Cream</option>
+            <option value="Extra Sugar">Extra Sugar</option>
+            <option value="Extra Ice">Extra Ice</option>
+          </select>
+          <small>ERROR</small>
+        </div>
+        <div class="form-group totalprice">
+          <label for="totalprice">Total Price:</label>
+          <output id="totalprice" name="totalprice"> </output>
+        </div>
+        <div class="form-group submit-btn">
+          <input type="submit" value="Order" />
+        </div>
+      </form>
+    </section>
+    <!--Footer-->
+    <footer>
+      <div class="row primary">
+        <div class="column footer-about">
+          <h3>MR.COFFEE</h3>
+          <p>
+            MR.COFFEE is a premium coffee provider committed to delivering the
+            finest flavors from carefully selected coffee beans.We prioritize
+            quality, comfort, and an unforgettable coffee experience. With
+            precise roasting processes and a dedicated professional team,
+            MR.COFFEE is here for every moment—whether you're starting your day,
+            relaxing, or enjoying conversations with those who matter. We
+            believe that a perfect cup of coffee can create warmer, more
+            meaningful connections.
+          </p>
+        </div>
+        <div class="column subscribe">
+          <h3>Contact Us</h3>
+          <div class="social">
+            <i class="fa-brands fa-facebook-square"></i>
+            <i class="fa-brands fa-instagram-square"></i>
+            <i class="fa-brands fa-twitter-square"></i>
+            <i class="fa-solid fa-envelope"></i>
+            <i class="fa-solid fa-phone"></i>
+          </div>
+        </div>
+      </div>
+      <div class="row copyright">
+        <p>Copyright &copy; 2025 MR.COFFEE | All Rights Reserved</p>
+      </div>
+    </footer>
+    <script src="/js/main.js"></script>
+    <script src="/js/order.js"></script>
+  </body>
+</html>
